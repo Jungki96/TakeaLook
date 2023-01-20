@@ -1,0 +1,89 @@
+{
+  "index": [
+    {
+      "id": 1,
+      "catName": "그러",
+      "age": "3",
+      "gender": "W",
+      "text": "세번째 고양이",
+      "love": 0,
+      "like": ""
+    },
+    {
+      "id": 2,
+      "catName": "꼬마고양이",
+      "age": "4",
+      "gender": "W",
+      "text": "네번째 고양이",
+      "love": 2,
+      "like": ""
+    },
+    {
+      "id": 3,
+      "catName": "타뮤",
+      "age": "5",
+      "gender": "W",
+      "text": "다섯번째 고양이",
+      "love": 3,
+      "like": ""
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "listid": "1",
+      "comment": "zczxcsa",
+      "username": "정기"
+    },
+    {
+      "listid": "1",
+      "id": 2,
+      "comment": "ㅋㅋㅋ",
+      "username": "정기"
+    },
+    {
+      "username": "댓긇 ",
+      "comment": "추가",
+      "listid": "1",
+      "id": 3
+    },
+    {
+      "username": "하나더 추",
+      "comment": "될까요?",
+      "listid": "3",
+      "id": 5
+    },
+    {
+      "username": "5글자까지",
+      "comment": "됩니다",
+      "listid": "3",
+      "id": 6
+    },
+    {
+      "username": "꼬마",
+      "comment": "타뮤",
+      "listid": "4",
+      "id": 7
+    }
+  ],
+  "users": [
+    {
+      "name": "채정",
+      "email": "angela",
+      "password": "password",
+      "id": 1
+    },
+    {
+      "name": "채정",
+      "email": "chaejung",
+      "password": "",
+      "id": 2
+    },
+    {
+      "name": "정기",
+      "email": "jungki@",
+      "password": "qwerdf",
+      "id": 3
+    }
+  ]
+}
