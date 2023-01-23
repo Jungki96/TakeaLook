@@ -18,7 +18,7 @@ const Detail = () => {
   });
 
   const Authorizationtest =
-    "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiLsoJXquLAiLCJhdXRoIjoiVVNFUiIsImV4cCI6MTY3NDI4Mjk5NywiaWF0IjoxNjc0MTk2NTk3fQ.W1BpuVS4OymRI2eRcTZZXiuq6M0hl8hmxxFm7qaxyQM";
+    "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiLthYzsiqTtirgiLCJhdXRoIjoiVVNFUiIsImV4cCI6MTY3NDI5NDgwMiwiaWF0IjoxNjc0MjA4NDAyfQ.pUZUgtKQisgIvH8YnkDnXqxU0C_oImZpb6f0qwXBxGA";
 
   // 게시물 CRUD
   const onEditThisCat = (e) => {
@@ -63,7 +63,9 @@ const Detail = () => {
         {!isEditMode && (
           <StDetailBox>
             <StPicwithDesc>
-              <StCatPic>그림</StCatPic>
+              <StCatPic>
+                <StImage src={mycat.imageUrl} />
+              </StCatPic>
               <StDecsBox>
                 <StDescDIv>
                   <h3>{mycat.catName}</h3>
@@ -100,7 +102,7 @@ const Detail = () => {
             </StButtonDiv>
             <StLoveVIew>
               <StLove>💜 {mycat.love}</StLove>
-              <StView>{mycat.visit}</StView>
+              <StView>👀 {mycat.visit}</StView>
             </StLoveVIew>
           </StDetailBox>
         )}
@@ -336,4 +338,15 @@ const StDescDIv = styled.div`
   justify-content: center;
   align-items: center;
   margin: auto;
+`;
+
+const StImage = styled.img`
+  width: 240px;
+  height: 240px;
+  justify-content: center;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  border-radius: 10px;
 `;

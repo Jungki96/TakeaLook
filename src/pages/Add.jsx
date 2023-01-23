@@ -18,7 +18,7 @@ const Add = () => {
   });
 
   const Authorizationtest =
-    "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiLsoJXquLAiLCJhdXRoIjoiVVNFUiIsImV4cCI6MTY3NDI4Mjk5NywiaWF0IjoxNjc0MTk2NTk3fQ.W1BpuVS4OymRI2eRcTZZXiuq6M0hl8hmxxFm7qaxyQM";
+    "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiLthYzsiqTtirgiLCJhdXRoIjoiVVNFUiIsImV4cCI6MTY3NDI5NDgwMiwiaWF0IjoxNjc0MjA4NDAyfQ.pUZUgtKQisgIvH8YnkDnXqxU0C_oImZpb6f0qwXBxGA";
 
   const [imgBase64, setImgBase64] = useState([]); // 파일 base64
   const [imgFile, setImgFile] = useState(null); //파일
@@ -61,7 +61,7 @@ const Add = () => {
         }
       })
       .catch((error) => {});
-    // navigate("/index");
+    navigate("/index");
   };
 
   return (

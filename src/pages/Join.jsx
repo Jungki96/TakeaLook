@@ -45,7 +45,7 @@ function Join() {
           // localStorage.setItem("token", response.data.jwt); //있어도 되고 없어도 되는데 리덕스를 사용하지 않으면 필수 // context.api 공부하세요
           console.log(response);
           alert("회원가입 성공! 로그인으로 이동합니다");
-          navigate(`/Login`);
+          // navigate(`/`);
         })
         .catch((ex) => {
           if (ex.response && ex.response.status === 404) {
@@ -116,6 +116,7 @@ function Join() {
             type="submit"
             onClick={() => {
               register();
+              window.location.replace("/");
             }}
           >
             register

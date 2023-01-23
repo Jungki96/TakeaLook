@@ -21,10 +21,19 @@ function Login() {
     e.preventDefault();
 
     try {
-      const response = await axios.post(`http://43.200.163.145/user/login`, {
-        username: id,
-        password,
-      });
+      const response = await axios
+        .post(`http://43.200.163.145/user/login`, {
+          username: id,
+          password,
+        })
+        .catch((ex) => {
+          if (ex.response && ex.response.status === 401) {
+            // 404 에러가 발생한 경우
+            alert("존재하지 않는 아이디입니다! ");
+          } else {
+            console.log("Oops......another error occurred:", ex);
+          }
+        });
       const accessToken = response?.data?.accessToken;
       localStorage.setItem("Authorization", accessToken.split(" ")[1]);
       navigate(`/Index`);
